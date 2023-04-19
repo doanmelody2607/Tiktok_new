@@ -1,0 +1,50 @@
+.menu-item {
+    display: flex;
+    align-items: center;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    padding: 8px;
+    transition: background-color 200ms ease-in-out 0s;
+
+    &.active {
+        color: var(--primary);
+
+        .icon {
+            display: none;
+        }
+
+        .active-icon {
+            display: flex;
+        }
+    }
+
+    &:hover {
+        background-color: rgba(22, 24, 35, 0.03);
+    }
+}
+
+.title {
+    margin-left: 8px;
+}
+
+.icon,
+.active-icon {
+    display: flex;
+}
+
+.active-icon {
+    display: none;
+}
+
+.dot {
+    margin-inline-start: 2px;
+    margin-top: 3px;
+    font-size: 18px;
+    line-height: 25px;
+
+    svg {
+        vertical-align: top;
+    }
+}
